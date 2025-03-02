@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Position</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      width: 100vw;
+      background-color: #222222;
+    }
+    ul{
+height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      background-color: #292929;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+  box-shadow: 5px 5px 5px #050505;
+      background-image: linear-gradient(
+        rgb(48, 48, 48) 13%,
+        rgb(30, 30, 30) 40%,
+        #0c0d11 86%
+      );
+      border-color:white;
+    }
+    li{
+      position: relative;
+      width: 100px;
+      height: 50px;
+      display:flex;
+      align-items: center;
+      justify-content: space-around;
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 0.8em;
+      border-right: 1px solid black;
+      list-style: none;
+    }
+    li:nth-child(5){
+      border-right: none;
+    }
+
+    li:nth-child(1){
+     color: #BB99FF;
+    }
+#notifications{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 16px;
+  width: 16px;
+  background-color: red;
+  border-radius: 50%;
+  border: 1px solid white;
+  color: white;
+  position: absolute;
+top: -5px;
+  right: -5px;
+}
+li:hover{
+  color: white;
+}
+  </style>
+</head>
+<body>
+<!--position:static|relative|fixed|absolute|sticky-->
+
+<nav>
+  <ul>
+    <li><span>Home</span><i class="fa-solid fa-house"></i></li>
+    <li><span>Search</span><i class="fa-solid fa-magnifying-glass"></i></li>
+    <li><span>Notification</span><i class="fa-solid fa-bell"></i><div id="notifications">13</div></li>
+    <li><span>Favorites</span><i class="fa-solid fa-star"></i></li>
+    <li><span>Your Profile</span><i class="fa-solid fa-bell"></i><div><div id="profil"></div></div></li>
+  </ul>
+</nav>
+</body>
+</html>
